@@ -1,3 +1,19 @@
+@font-face {
+    font-family: header_heading;
+    src: url(../font/canela_fonts/Canela-Medium.woff);
+}
+
+@font-face {
+    font-family: top_text;
+    src: url(../font/poppins/Poppins-Light.woff);
+}
+
+@font-face {
+    font-family: btn_text;
+    src: url(../font/poppins/Poppins-SemiBold.woff);
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +23,7 @@ body {
 .header_heading {
     color: #000;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'top_text';
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -41,7 +57,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 50px;
-    font-family: 'canela web';
+    font-family: 'header_heading';
     letter-spacing: 0.42px;
 }
 
@@ -53,6 +69,7 @@ body {
     letter-spacing: 0.14px;
     position: relative;
     margin-top: 2rem;
+    font-family: 'top_text';
 }
 
 .header .heading p span {
@@ -69,7 +86,7 @@ body {
     width: 100%;
     font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-family: 'btn_text';
     line-height: 20px;
     letter-spacing: 0.22px;
     margin-top: 2rem;
@@ -130,7 +147,12 @@ body {
 
 @media screen and (max-width: 1024px) {
     .header .header_backgrounds .heading {
-       padding-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .mob-padding {
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 }
 
@@ -167,19 +189,11 @@ body {
         border-radius: 100px;
         background: #FFF;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        /* width: 100%; */
         font-size: 17px;
         font-style: normal;
         font-weight: 600;
         line-height: 17px;
         letter-spacing: 0.22px;
         margin-top: 0rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .mob-padding {
-        padding-right: 1.5rem !important;
-        padding-left: 1.5rem !important;
     }
 }
