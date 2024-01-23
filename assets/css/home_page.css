@@ -197,3 +197,192 @@ body {
         margin-top: 0rem;
     }
 }
+
+/* --------------------- logo-swiper start ----------------------------- */
+.logo-swiper {
+    background: #FFFAF0;
+    padding: 40px 0px;
+}
+
+.logo-swiper .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-swiper .logos .logo_img p {
+    color: #C2BCB1;
+    font-family: 'top_text';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+.logo-swiper .mob_logos .logo_img p {
+    color: #C2BCB1;
+    font-family: 'top_text';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+}
+
+.vogue_list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo_img img {
+        margin-bottom: 10px;
+    }
+
+    .logo-swiper .logos {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-swiper {
+        background: #FFFAF0;
+        padding: 20px 0px;
+    }
+
+}
+
+/* --------------------- logo-swiper end ----------------------------- */
+
+
+/* video section start */
+.video_sec {
+    padding-top: 70px;
+}
+
+.video_sec .qure_img {
+    position: relative;
+}
+
+.video_sec .qure_img .video_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video_sec .qure_img .video_content h2 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'header_heading';
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0.3px;
+}
+
+.video_sec .qure_img .video_content .video_pause {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    margin-top: 24px;
+}
+
+.video_sec .qure_img .video_content .video_pause span {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: 'top_text';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 576px) {
+    .video_sec .qure_img .img-fluid {
+        width: 100% !important;
+    }
+
+    .video_sec .qure_img .video_content h2 {
+        font-size: 35px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+    }
+
+    .video_sec .qure_img .video_content .video_pause {
+        margin-top: 15px;
+    }
+}
+
+
+/* video section end */
+
+/* collapse card start */
+.collpase_card {
+    padding-top: 70px;
+}
+
+.collpase_card .card {
+    border: 0;
+}
+
+.collpase_card .card .card-body .accordion .accordion-item {
+    border: 0;
+}
+
+.collpase_card .card .card-body .accordion .accordion-item .accordion-header .accordion-button {
+    color: #000;
+    font-family: 'top_text';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.14px;
+    padding: 0;
+}
+
+.collpase_card .card .card-body .accordion .accordion-item .accordion-header .accordion-collapse {
+    color: #000;
+    font-family: 'top_text';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+}
+
+.collpase_card .card .card-body .accordion .accordion-body {
+    padding: 1rem 0px !important;
+}
+
+.collpase_card .card .card-body .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    background: transparent;
+    border: 0;
+}
+
+.collpase_card .card .card-body .accordion-button:focus {
+    z-index: 3;
+    border-color: var(--bs-accordion-btn-focus-border-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.collpase_card .card .card-body .accordion-button:not(.collapsed) {
+    color: #000;
+    box-shadow: none;
+}
+
+.collpase_card .card .card-body .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+
+/* collapse card end */
